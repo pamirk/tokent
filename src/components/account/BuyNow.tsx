@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { buyNow } from "api/ApiCalls"
+// import { buyNow } from "api/ApiCalls"
 // import { useStripe } from "@stripe/react-stripe-js"
 import Checkmark from "components/generic/icons/Checkmark"
 import styled from "styled-components"
@@ -20,9 +20,7 @@ const BuyNow = () => {
   const [isYearly, setIsYearly] = useState<boolean>(true)
   const price = isYearly ? "€3250" : "€325"
   const detailText = isYearly ? "Year / per user" : "Month / per user"
-  const priceId = isYearly
-    ? "price_1IoNCFENIA9dlSUdeBfiye7C"
-    : "price_1IH2L5ENIA9dlSUdo8XuiFXO"
+  // const priceId = isYearly ? "price_1IoNCFENIA9dlSUdeBfiye7C" : "price_1IH2L5ENIA9dlSUdo8XuiFXO"
 
   const handleBuyNow = () => {
     // if (!stripe) return
