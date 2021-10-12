@@ -85,6 +85,7 @@ const Wrapper = styled.div<{ isSidebarOpen: boolean }>`
   padding: 4px 32px 4px ${(props) => (props.isSidebarOpen ? "240px" : "58px")};
   align-items: center;
   height: 100%;
+  justify-content: end;
 `
 
 const Navigator = styled.div`
