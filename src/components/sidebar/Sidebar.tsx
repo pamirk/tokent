@@ -76,13 +76,13 @@ const Sidebar = (props: Props) => {
             isOpen={isOpen}
             tooltipId="sidebar-home"
           />
-          <SidebarSection
+     {/*     <SidebarSection
             title="Metrics"
             items={metrics}
             icon={<BarChartIcon />}
             isOpen={isOpen}
             tooltipId="sidebar-metrics"
-          />
+          />*/}
          {/* <SidebarSection
             title="Markets"
             items={markets}

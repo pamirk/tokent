@@ -3,6 +3,7 @@ import { Box, Typography } from "@material-ui/core";
 
 import Coded from "@material-ui/icons/Code";
 import Love from "@material-ui/icons/Favorite";
+import styled from "styled-components";
 
 export default () => {
   return (
@@ -15,13 +16,17 @@ export default () => {
       marginTop="auto"
     >
       <Box display="flex" margin={1}>
-        <Coded color={"primary"} />
+        <Coded style={{color: "#00cf9d"}} />
       </Box>
-      <Typography color={"primary"}>with</Typography>
+      <Typography color={"primary"}><Green>with</Green></Typography>
       <Box display="flex" margin={1}>
         <Love color={"secondary"}/>
       </Box>
-      <Typography color={"primary"}>by PK</Typography>
+      <Typography color={"primary"}><Green>by PK</Green></Typography>
     </Box>
   );
 };
+
+const Green = styled.span`
+  color: #00cf9d;
+`

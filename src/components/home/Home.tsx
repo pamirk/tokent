@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Explore />
-      <HomeCharts />
+      {/*<HomeCharts />*/}
       <OverviewTable />
       {/*<BottomCards />*/}
     </>

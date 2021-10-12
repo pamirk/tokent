@@ -238,7 +238,7 @@ const OverviewTable = (props: Props) => {
         </>
       )}
       <Download>
-        <DownloadButton
+       {/* <DownloadButton
           name="Download"
           tooltipId="table-download-allowed"
           icon={DownloadIcon}
@@ -247,7 +247,7 @@ const OverviewTable = (props: Props) => {
 
         {isUpgradeModalVisible && (
           <UpgradeModal onClose={() => setIsUpgradeModalVisible(false)} />
-        )}
+        )}*/}
         {isCustomizeOpen && (
           <CustomizeTableModal
             onClose={() => setIsCustomizeOpen(false)}

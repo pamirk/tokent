@@ -41,7 +41,7 @@ const OverviewTableRow = (props: {
     return (
       <div key={project.name}>
         <TableRowContainer
-          onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}
+         /* onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}*/
         >
           <TableRowColumn key="name">
             <SmallLogo
@@ -59,7 +59,9 @@ const OverviewTableRow = (props: {
 
   return (
     <div key={project.name}>
-      <TableRowContainer onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}>
+      <TableRowContainer
+         /* onClick={() => setIsOpen((prevIsOpen) => !prevIsOpen)}*/
+      >
         <TableRowColumn>
           <SmallLogo
             src={"https://d2kyooqkgm9ipp.cloudfront.net/" + project.logo}

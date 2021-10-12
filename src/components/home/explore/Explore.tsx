@@ -5,10 +5,9 @@ const Explore = () => {
   return (
     <Container>
       <Title>
-        {"Crypto redefines the way businesses are built and operated."} <br />
         {"We gives you the tools to "}
         <Green>{"evaluate and track"}</Green>
-        {" the most promising projects."}
+        {" crypto related projects."}
       </Title>
     </Container>
   )
