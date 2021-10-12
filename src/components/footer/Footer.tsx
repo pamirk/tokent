@@ -73,7 +73,8 @@ const Footer = (props: Props) => {
           />
         </div>
       </div>
-      <div style={{ display: "flex" }}>
+
+      {/*<div style={{ display: "flex" }}>
         <Wrapper>
           {footerItems.map((item) => (
             <Item key={item.name} href={item.url} target="_blank">
@@ -88,7 +89,7 @@ const Footer = (props: Props) => {
             </Item>
           ))}
         </Wrapper>
-      </div>
+      </div>*/}
     </FooterContainer>
   )
 }

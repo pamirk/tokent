@@ -6,7 +6,7 @@ import BottomCards from "./bottom/BottomCards"
 import HomeCharts from "./charts/HomeCharts"
 
 const Home = () => {
-  document.title = "Token Terminal | Home"
+  document.title = "Crypto | Home"
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -16,7 +16,7 @@ const Home = () => {
       <Explore />
       <HomeCharts />
       <OverviewTable />
-      <BottomCards />
+      {/*<BottomCards />*/}
     </>
   )
 }

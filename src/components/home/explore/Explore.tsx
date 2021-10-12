@@ -6,7 +6,7 @@ const Explore = () => {
     <Container>
       <Title>
         {"Crypto redefines the way businesses are built and operated."} <br />
-        {"Token Terminal gives you the tools to "}
+        {"We gives you the tools to "}
         <Green>{"evaluate and track"}</Green>
         {" the most promising projects."}
       </Title>

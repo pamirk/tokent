@@ -53,13 +53,13 @@ const NavHeader = (props: Props) => {
   return (
     <Container>
       <Wrapper isSidebarOpen={isSidebarOpen}>
-        <Navigator>
-          <Search />
-        </Navigator>
+        {/*<Navigator>*/}
+        {/*  <Search />*/}
+        {/*</Navigator>*/}
         <div style={{ display: "inline-flex", alignItems: "center" }}>
           <ColorToggle style={{ marginRight: "20px" }} isOpen />
-          {!isLoggedIn && <NavAuth />}
-          {isLoggedIn && !!user.id && <NavUser />}
+          {/*{!isLoggedIn && <NavAuth />}*/}
+          {/*{isLoggedIn && !!user.id && <NavUser />}*/}
         </div>
       </Wrapper>
     </Container>

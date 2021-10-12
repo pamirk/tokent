@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 
 export const AuthSidebarContents = () => {
   const { user } = useAuth()
-
+  console.log(user)
   const [copied, setCopied] = useState(false)
 
   const copyApiKey = () => {
@@ -34,7 +34,8 @@ export const AuthSidebarContents = () => {
             }
           </Text>
         )}
-        {user.paid && user.apiToken && (
+
+        {!user.paid && user.apiToken && (
           <>
             <ApiKeyText style={{ width: "100%" }}>
               <Text style={{ marginBottom: "5px" }}>{"API key:"}&nbsp;</Text>

@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Sidebar from "components/sidebar/Sidebar"
 import { Routes } from "config/Routes"
 import { useTheme } from "context/ThemeContext"
-import LogoDark from "utils/animation/logo-dark.gif"
-import LogoLight from "utils/animation/logo-light.gif"
+import LogoDark from "utils/animation/chart-loading-dark.gif"
+import LogoLight from "utils/animation/chart-loading-light.gif"
 import { useData } from "context/DataContext"
 import SocketProvider from "context/SocketContext"
 import Footer from "components/footer/Footer"
@@ -103,14 +103,14 @@ function App() {
                 metrics={allMetrics}
                 onSidebarToggle={setIsSidebarOpen}
               />
-              <Feed updateWidth={setMarginRight} />
+              {/*<Feed updateWidth={setMarginRight} />*/}
             </>
           )}
           <SocketProvider>
             <AppContainer
               isSidebarOpen={isSidebarOpen}
               isMobile={isMobile}
-              marginRight={marginRight}
+              marginRight={0}
             >
               <Switch>
                 {Routes.map(({ path, component: Component }) => (

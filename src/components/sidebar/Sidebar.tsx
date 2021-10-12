@@ -54,7 +54,8 @@ const Sidebar = (props: Props) => {
         <Logo to="/">
           <LogoImg
             isOpen={isOpen}
-            src={isOpen ? logo : logoSmall}
+            // src={isOpen ? logo : logoSmall}
+            src={ logoSmall}
             alt="Logo"
             height="24px"
           />
@@ -82,7 +83,7 @@ const Sidebar = (props: Props) => {
             isOpen={isOpen}
             tooltipId="sidebar-metrics"
           />
-          <SidebarSection
+         {/* <SidebarSection
             title="Markets"
             items={markets}
             icon={<MarketsIcon />}
@@ -95,9 +96,9 @@ const Sidebar = (props: Props) => {
             icon={<ProjectsIcon />}
             isOpen={isOpen}
             tooltipId="sidebar-projects"
-          />
+          />*/}
         </SidebarTop>
-        <SidebarBottom>
+   {/*     <SidebarBottom>
           <SidebarSection
             title="Insights"
             href="https://tokenterminal.substack.com/"
@@ -113,7 +114,7 @@ const Sidebar = (props: Props) => {
             tooltipId="sidebar-about"
           />
           {isOpen && <SampleData />}
-        </SidebarBottom>
+        </SidebarBottom>*/}
       </Wrapper>
     </Container>
   )
