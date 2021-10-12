@@ -285,6 +285,12 @@ export const ChartContents = styled.div<{ hasArrowButtons?: boolean }>`
 `
 
 export const ChartWatermarkWhite = (
+  <></>
+)
+export const ChartWatermarkGray = (
+  <></>
+)
+/*export const ChartWatermarkWhite = (
   <image
     href={LogoWhite}
     x={isMobile ? "35%" : "42%"}
@@ -301,7 +307,7 @@ export const ChartWatermarkGray = (
     height={isMobile ? "15" : "40"}
     width={isMobile ? "100" : "260"}
   />
-)
+)*/
 
 export const ExpandChartModal = (props: {
   project?: ProjectType

@@ -156,6 +156,12 @@ const RefreshIcon = ({ fill }: { fill: string }) => (
 export default BarChartGraph
 
 const BarChartWatermarkWhite = (
+   <></>
+)
+const BarChartWatermarkGray = (
+  <></>
+)
+/*const BarChartWatermarkWhite = (
   <image
     href={LogoWhite}
     x={isMobile ? "35%" : "42%"}
@@ -172,7 +178,7 @@ const BarChartWatermarkGray = (
     height={isMobile ? "15" : "40"}
     width={isMobile ? "100" : "260"}
   />
-)
+)*/
 
 const Refresh = styled.div`
   display: flex;
